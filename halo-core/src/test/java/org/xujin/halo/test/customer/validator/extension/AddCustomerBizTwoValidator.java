@@ -1,7 +1,9 @@
 package org.xujin.halo.test.customer.validator.extension;
 
 import org.xujin.halo.exception.ParamException;
+import org.xujin.halo.annotation.extension.Extension;
 import org.xujin.halo.test.customer.AddCustomerCmd;
+import org.xujin.halo.test.customer.Constants;
 import org.xujin.halo.test.customer.validator.extensionpoint.AddCustomerValidatorExtPt;
 
 /**
@@ -10,6 +12,7 @@ import org.xujin.halo.test.customer.validator.extensionpoint.AddCustomerValidato
  * @author xujin
  * @date 2018-01-07 1:31 AM
  */
+@Extension(bizCode = Constants.BIZ_2)
 public class AddCustomerBizTwoValidator implements AddCustomerValidatorExtPt {
 
     @Override
