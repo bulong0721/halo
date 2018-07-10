@@ -3,7 +3,7 @@ package org.xujin.halo.extension;
 import org.xujin.halo.boot.ComponentExecutor;
 import org.xujin.halo.common.CoreConstant;
 import org.xujin.halo.common.DefaultBizCode;
-import org.xujin.halo.context.TenantContext;
+import org.xujin.halo.context.HaloContext;
 import org.xujin.halo.exception.InfraException;
 import org.xujin.halo.logger.Logger;
 import org.xujin.halo.logger.LoggerFactory;
@@ -34,8 +34,8 @@ public class ExtensionExecutor extends ComponentExecutor{
      */
     @SuppressWarnings("unchecked")
     protected <Ext> Ext locateExtension(Class<Ext> targetClz) {
-        String bizCode = TenantContext.getBizCode();
-        String tenantId = TenantContext.getTenantId();
+        String bizCode = HaloContext.getBizCode();
+        String tenantId = HaloContext.getTenantId();
         ExtensionCoordinate extensionCoordinate = new ExtensionCoordinate(targetClz.getSimpleName(), bizCode, tenantId);
         /**
          * 1.First search key is: extensionPoint + bizCode + tenantId
