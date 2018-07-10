@@ -1,7 +1,7 @@
 package org.xujin.halo.test;
 
 import org.xujin.halo.TestConfig;
-import org.xujin.halo.context.TenantContext;
+import org.xujin.halo.context.HaloContext;
 import org.xujin.halo.dto.Response;
 import org.xujin.halo.exception.BasicErrorCode;
 import org.xujin.halo.test.customer.*;
@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.xujin.halo.test.customer.*;
 
 /**
  * CustomerCommandTest
@@ -37,13 +36,13 @@ public class CustomerCommandTest {
 
     @Before
     public void setUp() {
-        TenantContext.set(Constants.TENANT_ID, bizCode);
+        HaloContext.set(Constants.TENANT_ID, bizCode);
     }
 
     @Test
     public void testBizOneAddCustomerSuccess(){
         //1. Prepare
-        TenantContext.set(Constants.TENANT_ID, Constants.BIZ_1);
+        HaloContext.set(Constants.TENANT_ID, Constants.BIZ_1);
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCompanyName("xxxx");
@@ -61,7 +60,7 @@ public class CustomerCommandTest {
     @Test
     public void testBizOneAddCustomerFailure(){
         //1. Prepare
-        TenantContext.set(Constants.TENANT_ID, Constants.BIZ_1);
+        HaloContext.set(Constants.TENANT_ID, Constants.BIZ_1);
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCompanyName("xxxx");
@@ -80,7 +79,7 @@ public class CustomerCommandTest {
     @Test
     public void testBizTwoAddCustomer(){
         //1. Prepare
-        TenantContext.set(Constants.TENANT_ID, Constants.BIZ_2);
+        HaloContext.set(Constants.TENANT_ID, Constants.BIZ_2);
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCompanyName("xxxx");

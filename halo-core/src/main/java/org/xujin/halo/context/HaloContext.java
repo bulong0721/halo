@@ -5,7 +5,7 @@ import org.xujin.halo.exception.BizException;
 /**
  * 租户的上下文
  */
-public class TenantContext {
+public class HaloContext {
 
    private static ThreadLocal<Tenant> tenantContext = new ThreadLocal<>();
 
