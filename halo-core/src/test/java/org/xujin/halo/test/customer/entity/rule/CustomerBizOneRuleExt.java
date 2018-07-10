@@ -1,8 +1,6 @@
 package org.xujin.halo.test.customer.entity.rule;
 
 import org.xujin.halo.exception.BizException;
-import org.xujin.halo.extension.Extension;
-import org.xujin.halo.test.customer.Constants;
 import org.xujin.halo.test.customer.entity.CustomerEntity;
 import org.xujin.halo.test.customer.entity.SourceType;
 
@@ -12,7 +10,6 @@ import org.xujin.halo.test.customer.entity.SourceType;
  * @author xujin
  * @date 2018-01-07 12:10 PM
  */
-@Extension(bizCode = Constants.BIZ_1)
 public class CustomerBizOneRuleExt implements CustomerRuleExtPt{
 
     @Override

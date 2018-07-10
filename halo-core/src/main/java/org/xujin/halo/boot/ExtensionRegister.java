@@ -1,8 +1,8 @@
 package org.xujin.halo.boot;
 
+import org.xujin.halo.annotation.extension.Extension;
 import org.xujin.halo.common.CoreConstant;
 import org.xujin.halo.exception.InfraException;
-import org.xujin.halo.extension.Extension;
 import org.xujin.halo.extension.ExtensionCoordinate;
 import org.xujin.halo.extension.ExtensionPointI;
 import org.xujin.halo.extension.ExtensionRepository;

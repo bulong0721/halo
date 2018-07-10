@@ -1,8 +1,7 @@
-package org.xujin.halo.extension;
+package org.xujin.halo.annotation.extension;
 
-import org.springframework.core.annotation.AliasFor;
-import org.xujin.halo.common.CoreConstant;
 import org.springframework.stereotype.Component;
+import org.xujin.halo.common.CoreConstant;
 
 import java.lang.annotation.*;
 
@@ -12,9 +11,30 @@ import java.lang.annotation.*;
  */
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
+@Documented
 @Target({ElementType.TYPE})
 @Component
 public @interface Extension {
+
+    /**
+     * 扩展的Id
+     * @return
+     */
+    String id() default "";
+
+    /**
+     * 对应的扩展点Id
+     * @return
+     */
+    String extensionPointId() default "";
+
+    /**
+     * 扩展对应的描述
+     * @return
+     */
+    String desc() default "";
+
+    boolean defaultExtension() default false;
 
     /**
      * 一级业务code

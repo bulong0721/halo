@@ -1,13 +1,13 @@
 
 package org.xujin.halo.boot;
 
+import org.xujin.halo.annotation.extension.Extension;
 import org.xujin.halo.command.Command;
 import org.xujin.halo.command.PostInterceptor;
 import org.xujin.halo.command.PreInterceptor;
 import org.xujin.halo.common.CoreConstant;
 import org.xujin.halo.event.EventHandler;
 import org.xujin.halo.exception.InfraException;
-import org.xujin.halo.extension.Extension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

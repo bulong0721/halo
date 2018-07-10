@@ -1,6 +1,5 @@
 package org.xujin.halo.test;
 
-import org.xujin.halo.TestConfig;
 import org.xujin.halo.context.TenantContext;
 import org.xujin.halo.dto.Response;
 import org.xujin.halo.exception.BasicErrorCode;
@@ -15,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.xujin.halo.test.customer.*;
 
 /**
  * CustomerCommandTest
