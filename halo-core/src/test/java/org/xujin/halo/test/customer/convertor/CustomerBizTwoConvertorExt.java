@@ -1,6 +1,6 @@
 package org.xujin.halo.test.customer.convertor;
 
-import org.xujin.halo.extension.Extension;
+import org.xujin.halo.annotation.extension.Extension;
 import org.xujin.halo.test.customer.Constants;
 import org.xujin.halo.test.customer.CustomerCO;
 import org.xujin.halo.test.customer.entity.CustomerEntity;
