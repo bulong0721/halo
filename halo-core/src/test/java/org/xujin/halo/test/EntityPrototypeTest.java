@@ -1,5 +1,6 @@
 package org.xujin.halo.test;
 
+import org.xujin.halo.TestConfig;
 import org.xujin.halo.common.ApplicationContextHelper;
 import org.xujin.halo.test.customer.entity.CustomerEntity;
 import org.junit.Assert;

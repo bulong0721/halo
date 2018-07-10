@@ -1,5 +1,6 @@
 package org.xujin.halo.test;
 
+import org.xujin.halo.TestConfig;
 import org.xujin.halo.context.TenantContext;
 import org.xujin.halo.dto.Response;
 import org.xujin.halo.exception.BasicErrorCode;
@@ -72,7 +73,7 @@ public class CustomerCommandTest {
 
         //3. Expect exception
         Assert.assertFalse(response.isSuccess());
-        Assert.assertEquals(response.getErrCode(), BasicErrorCode.BIZ_ERROR.getErrCode());
+        Assert.assertEquals(response.getErrCode(), BasicErrorCode.INFRA_ERROR.getErrCode());
     }
 
     @Test

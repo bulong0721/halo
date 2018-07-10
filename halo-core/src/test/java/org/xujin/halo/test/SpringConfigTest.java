@@ -1,5 +1,6 @@
 package org.xujin.halo.test;
 
+import org.xujin.halo.TestConfig;
 import org.xujin.halo.boot.Bootstrap;
 import org.xujin.halo.boot.RegisterFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
