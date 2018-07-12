@@ -31,7 +31,7 @@ public class ExtensionRegister implements RegisterI, ApplicationContextAware{
         ExtensionPointI extension = (ExtensionPointI) applicationContext.getBean(targetClz);
         Extension extensionAnn = targetClz.getDeclaredAnnotation(Extension.class);
         String extensionPoint = calculateExtensionPoint(targetClz);
-        ExtensionCoordinate extensionCoordinate = new ExtensionCoordinate(extensionPoint, extensionAnn.bizCode(), extensionAnn.tenantId());
+        ExtensionCoordinate extensionCoordinate = new ExtensionCoordinate(extensionPoint, extensionAnn.bizCode(), extensionAnn.extBizCode());
         ExtensionPointI preVal = extensionRepository.getExtensionRepo().put(extensionCoordinate, extension);
         if (preVal != null) {
             throw new InfraException("Duplicate registration is not allowed for :"+extensionCoordinate);
