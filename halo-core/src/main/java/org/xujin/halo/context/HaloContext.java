@@ -3,46 +3,46 @@ package org.xujin.halo.context;
 import org.xujin.halo.exception.BizException;
 
 /**
- * 租户的上下文
+ * Halo框架上下文
  */
 public class HaloContext {
 
-   private static ThreadLocal<Tenant> tenantContext = new ThreadLocal<>();
+   private static ThreadLocal<IdentityContext> haloContext = new ThreadLocal<>();
 
-   private static class Tenant{
-       String tenantId;
+   private static class IdentityContext{
        String bizCode;
-       private Tenant(String tenantId, String bizCode) {
-           this.tenantId = tenantId;
+       String extBizCode;
+       private IdentityContext(String bizCode,String extBizCode) {
+           this.extBizCode = extBizCode;
            this.bizCode = bizCode;
        }
    }
 
    public static boolean exist(){
-       return null != tenantContext.get();
+       return null != haloContext.get();
    }
 
-   public static String getTenantId() {
-       if (tenantContext.get() == null || tenantContext.get().tenantId == null) {
-           throw new BizException("No tenantId in Context");
+   public static String getExtBizCode() {
+       if (haloContext.get() == null || haloContext.get().extBizCode == null) {
+           throw new BizException("No extBizCode in Context");
        }
-       return tenantContext.get().tenantId;
+       return haloContext.get().extBizCode;
    }
 
    public static String getBizCode() {
-       if (tenantContext.get() == null || tenantContext.get().bizCode == null) {
+       if (haloContext.get() == null || haloContext.get().bizCode == null) {
            throw new BizException("No bizCode in Context");
        }
-       return tenantContext.get().bizCode;
+       return haloContext.get().bizCode;
    }
 
-   public static void set(String tenantId, String bizCode) {
-       Tenant tenant = new Tenant(tenantId, bizCode);
-       tenantContext.set(tenant);
+   public static void set(String bizCode,String extBizCode ) {
+       IdentityContext identityContext = new IdentityContext(bizCode,extBizCode);
+       haloContext.set(identityContext);
    }
 
    public static void remove() {
-       tenantContext.remove();
+       haloContext.remove();
    }
 
 }

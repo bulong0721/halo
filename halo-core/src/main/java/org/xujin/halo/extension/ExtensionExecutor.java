@@ -35,10 +35,10 @@ public class ExtensionExecutor extends ComponentExecutor{
     @SuppressWarnings("unchecked")
     protected <Ext> Ext locateExtension(Class<Ext> targetClz) {
         String bizCode = HaloContext.getBizCode();
-        String tenantId = HaloContext.getTenantId();
-        ExtensionCoordinate extensionCoordinate = new ExtensionCoordinate(targetClz.getSimpleName(), bizCode, tenantId);
+        String extBizCode = HaloContext.getExtBizCode();
+        ExtensionCoordinate extensionCoordinate = new ExtensionCoordinate(targetClz.getSimpleName(), bizCode, extBizCode);
         /**
-         * 1.First search key is: extensionPoint + bizCode + tenantId
+         * 1.First search key is: extensionPoint + bizCode + extBizCode
          */
         Ext extension = (Ext)extensionRepository.getExtensionRepo().get(extensionCoordinate);
         if (extension != null) {
@@ -47,7 +47,7 @@ public class ExtensionExecutor extends ComponentExecutor{
         /**
          * 2.Second search key is: extensionPoint + bizCode
          */        
-        extensionCoordinate.setTenantId(CoreConstant.DEFAULT_TENANT_ID);
+        extensionCoordinate.setExtBizCode(CoreConstant.DEFAULT_EXT_BIZ_CODE);
         extension = (Ext)extensionRepository.getExtensionRepo().get(extensionCoordinate);
         if (extension != null) {
             return extension;

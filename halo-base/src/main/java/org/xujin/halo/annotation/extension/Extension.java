@@ -43,8 +43,8 @@ public @interface Extension {
     String bizCode()  default CoreConstant.DEFAULT_BIZ_CODE;
 
     /**
-     * 二级业务code
+     * 扩展业务code
      * @return
      */
-    String tenantId() default CoreConstant.DEFAULT_TENANT_ID;
+    String tenantId() default CoreConstant.DEFAULT_EXT_BIZ_CODE;
 }
