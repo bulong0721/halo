@@ -3,7 +3,7 @@ package org.xujin.halo.context;
 import org.xujin.halo.exception.BizException;
 
 /**
- * 租户的上下文
+ * Halo框架上下文
  */
 public class HaloContext {
 
