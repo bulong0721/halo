@@ -13,18 +13,18 @@ public class ExtensionCoordinate {
     
     private String extensionPoint;
     private String bizCode;
-    private String tenantId;
+    private String extBizCode;
     
     /**
      * @param extensionPoint
      * @param bizCode
-     * @param tenantId
+     * @param extBizCode
      */
-    public ExtensionCoordinate(String extensionPoint, String bizCode, String tenantId){
+    public ExtensionCoordinate(String extensionPoint, String bizCode, String extBizCode){
         super();
         this.extensionPoint = extensionPoint;
         this.bizCode = bizCode;
-        this.tenantId = tenantId;
+        this.extBizCode = extBizCode;
     }
     
     @Override
@@ -33,7 +33,7 @@ public class ExtensionCoordinate {
         int result = 1;
         result = prime * result + ((bizCode == null) ? 0 : bizCode.hashCode());
         result = prime * result + ((extensionPoint == null) ? 0 : extensionPoint.hashCode());
-        result = prime * result + ((tenantId == null) ? 0 : tenantId.hashCode());
+        result = prime * result + ((extBizCode == null) ? 0 : extBizCode.hashCode());
         return result;
     }
     @Override
@@ -48,9 +48,9 @@ public class ExtensionCoordinate {
         if (extensionPoint == null) {
             if (other.extensionPoint != null) return false;
         } else if (!extensionPoint.equals(other.extensionPoint)) return false;
-        if (tenantId == null) {
-            if (other.tenantId != null) return false;
-        } else if (!tenantId.equals(other.tenantId)) return false;
+        if (extBizCode == null) {
+            if (other.extBizCode != null) return false;
+        } else if (!extBizCode.equals(other.extBizCode)) return false;
         return true;
     }
 
