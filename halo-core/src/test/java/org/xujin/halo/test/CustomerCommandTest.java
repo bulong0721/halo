@@ -36,13 +36,13 @@ public class CustomerCommandTest {
 
     @Before
     public void setUp() {
-        HaloContext.set(Constants.TENANT_ID, bizCode);
+        HaloContext.set(bizCode,Constants.TENANT_ID);
     }
 
     @Test
     public void testBizOneAddCustomerSuccess(){
         //1. Prepare
-        HaloContext.set(Constants.TENANT_ID, Constants.BIZ_1);
+        HaloContext.set( Constants.BIZ_1,Constants.TENANT_ID);
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCompanyName("xxxx");
@@ -60,7 +60,7 @@ public class CustomerCommandTest {
     @Test
     public void testBizOneAddCustomerFailure(){
         //1. Prepare
-        HaloContext.set(Constants.TENANT_ID, Constants.BIZ_1);
+        HaloContext.set(Constants.BIZ_1,Constants.TENANT_ID);
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCompanyName("xxxx");
@@ -79,7 +79,7 @@ public class CustomerCommandTest {
     @Test
     public void testBizTwoAddCustomer(){
         //1. Prepare
-        HaloContext.set(Constants.TENANT_ID, Constants.BIZ_2);
+        HaloContext.set(Constants.BIZ_2,Constants.TENANT_ID);
         AddCustomerCmd addCustomerCmd = new AddCustomerCmd();
         CustomerCO customerCO = new CustomerCO();
         customerCO.setCompanyName("xxxx");

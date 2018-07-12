@@ -1,10 +1,10 @@
 package org.xujin.halo.command;
 
+import org.xujin.halo.context.HaloContext;
 import org.xujin.halo.exception.BasicErrorCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import org.xujin.halo.context.HaloContext;
 import org.xujin.halo.dto.Command;
 import org.xujin.halo.dto.Response;
 import org.xujin.halo.exception.HaloException;

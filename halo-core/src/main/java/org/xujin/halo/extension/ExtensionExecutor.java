@@ -35,7 +35,7 @@ public class ExtensionExecutor extends ComponentExecutor{
     @SuppressWarnings("unchecked")
     protected <Ext> Ext locateExtension(Class<Ext> targetClz) {
         String bizCode = HaloContext.getBizCode();
-        String extBizCode = HaloContext.getTenantId();
+        String extBizCode = HaloContext.getExtBizCode();
         ExtensionCoordinate extensionCoordinate = new ExtensionCoordinate(targetClz.getSimpleName(), bizCode, extBizCode);
         /**
          * 1.First search key is: extensionPoint + bizCode + extBizCode
