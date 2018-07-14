@@ -4,7 +4,7 @@ package org.xujin.halo.flow.processor;
 import org.springframework.util.ClassUtils;
 import org.xujin.halo.flow.annotation.processor.*;
 import org.xujin.halo.flow.engine.TargetContext;
-import org.xujin.halo.method.MethodExecutor;
+import org.xujin.halo.event.method.MethodExecutor;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;

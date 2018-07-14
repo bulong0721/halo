@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.xujin.halo.method.MethodExecutor;
+import org.xujin.halo.event.method.MethodExecutor;
 
 /**
  * 监听器执行器
