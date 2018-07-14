@@ -1,4 +1,4 @@
-package org.xujin.halo.method;
+package org.xujin.halo.event.method;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
