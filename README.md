@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/edb89c5e-9a43-4323-8e2f-0d3ca486dbb7)](https://codebeat.co/projects/github-com-softwareking-halo-master)
+
 ## 1.Halo Framework
 
    Halo, 发音美 [ˈheɪloʊ]，和hello发音基本一致，中文名光环。Halo是Hallo的简写，是德语你好的意思。
