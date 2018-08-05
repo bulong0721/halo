@@ -46,6 +46,8 @@
         <module>halo-utils</module>
         <module>halo-starter</module>
         <module>halo-feign</module>
+        <module>halo-event</module>
+        <module>halo-flow</module>
     </modules>
 
     <dependencyManagement>
