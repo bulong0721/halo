@@ -41,8 +41,6 @@
         <module>halo-test</module>
         <module>halo-common</module>
         <module>halo-core</module>
-        <module>halo-flow</module>
-        <module>halo-event</module>
         <module>halo-collection</module>
         <module>halo-base</module>
         <module>halo-utils</module>
