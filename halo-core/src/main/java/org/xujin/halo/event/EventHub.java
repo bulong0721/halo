@@ -35,11 +35,7 @@ public class EventHub {
         return eventHandlerIList;
     }
 
-    /**
-     * 注册事件
-     * @param eventClz
-     * @param executor
-     */
+    //注册事件
     public void register(Class<? extends Event> eventClz, EventHandlerI executor){
         eventRepository.put(eventClz, executor);
     }

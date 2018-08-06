@@ -10,7 +10,11 @@
 	</parent>
 	<artifactId>halo-core</artifactId>
 	<version>1.0.4</version>
+
 	<name>halo-core</name>
+	<url>http://xujin.org</url>
+	<description>halo help project build DDD ability</description>
+
 	<dependencies>
 
 		<dependency>

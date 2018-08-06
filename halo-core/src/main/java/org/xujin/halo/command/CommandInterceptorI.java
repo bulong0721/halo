@@ -12,13 +12,13 @@ public interface CommandInterceptorI {
    
    /**
     * Pre-processing before command execution
-    * @param command
+    * @param command command
     */
    default public void preIntercept(Command command){};
    
    /**
     * Post-processing after command execution
-    * @param command
+    * @param command command
     * @param response, Note that response could be null, check it before use
     */
    default public void postIntercept(Command command, Response response){};

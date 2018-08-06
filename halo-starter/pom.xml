@@ -9,7 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>halo-starter</artifactId>
+
     <name>halo-starter</name>
+    <url>http://xujin.org</url>
+    <description>halo help project build DDD ability</description>
+
     <dependencies>
 
         <dependency>

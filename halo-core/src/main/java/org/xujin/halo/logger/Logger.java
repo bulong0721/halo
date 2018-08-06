@@ -16,9 +16,8 @@ public interface Logger {
 
     /**
      * Log a message at the DEBUG level. support format.
-     *
-     * @param msg
-     * @param args
+     * @param msg the message string to be logged
+     * @param args args
      */
     default public void debug(String msg, Object... args){
     	debug(String.format(msg, args));
@@ -33,9 +32,8 @@ public interface Logger {
 
     /**
      * Log a message at the INFO level. support format.
-     *
-     * @param msg
-     * @param args
+     * @param msg the message string to be logged
+     * @param args args
      */
     default public void info(String msg, Object... args){
     	info(String.format(msg, args));
@@ -50,9 +48,8 @@ public interface Logger {
 
     /**
      * Log a message at the WARN level. support format.
-     *
-     * @param msg
-     * @param args
+     * @param msg the message string to be logged
+     * @param args args
      */
     default public void warn(String msg, Object... args){
     	warn(String.format(msg, args));
@@ -66,8 +63,8 @@ public interface Logger {
 
     /**
      * Log a message at the ERROR level. support format.
-     * @param msg
-     * @param args
+     * @param msg the message string to be logged
+     * @param args args
      */
     default public void error(String msg, Object... args){
     	error(String.format(msg, args));

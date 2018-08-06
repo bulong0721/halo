@@ -44,13 +44,13 @@ public class ClassPathScanHandler {
      */
     private static final String CLASS_EXTENSION_NAME = ".class";
     /**
-     * 是否排除内部类 true->是 false->否.
+     * 是否排除内部类 true:是 false:否.
      */
     @Getter
     @Setter
     private boolean excludeInner = true;
     /**
-     * 过滤规则适用情况 true—>搜索符合规则的 false->排除符合规则的.
+     * 过滤规则适用情况 true:搜索符合规则的 false:排除符合规则的.
      */
     @Getter
     @Setter
@@ -81,8 +81,8 @@ public class ClassPathScanHandler {
     }
 
     /**
-     * excludeInner:是否排除内部类 true->是 false->否<br>.
-     * checkInOrEx：过滤规则适用情况 true—>搜索符合规则的 false->排除符合规则的<br>
+     * excludeInner:是否排除内部类 true:是 false:否.
+     * checkInOrEx：过滤规则适用情况 true:搜索符合规则的 false:排除符合规则的
      * classFilters：自定义过滤规则，如果是null或者空，即全部符合不过滤
      *
      * @param excludeInner whether exclude the inner class.
@@ -161,7 +161,7 @@ public class ClassPathScanHandler {
     }
 
     /**
-     * 以jar的方式扫描包下的所有Class文件<br>.
+     * 以jar的方式扫描包下的所有Class文件.
      *
      * @param basePackage eg：michael.utils.
      * @param url         the url.

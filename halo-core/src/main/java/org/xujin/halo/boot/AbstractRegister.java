@@ -37,7 +37,8 @@ public abstract class AbstractRegister implements RegisterI{
 
     /**
      * 根据Order注解排序
-     * @param interceptorIList
+     * @param interceptorIList interceptorI list
+     * @param <T> type
      */
     protected <T> void order(List<T> interceptorIList){
         if(interceptorIList == null || interceptorIList.size() <= 1){

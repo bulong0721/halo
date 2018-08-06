@@ -15,11 +15,6 @@ public class ExtensionCoordinate {
     private String bizCode;
     private String extBizCode;
     
-    /**
-     * @param extensionPoint
-     * @param bizCode
-     * @param extBizCode
-     */
     public ExtensionCoordinate(String extensionPoint, String bizCode, String extBizCode){
         super();
         this.extensionPoint = extensionPoint;

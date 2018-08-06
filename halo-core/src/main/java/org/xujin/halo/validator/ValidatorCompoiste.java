@@ -22,7 +22,7 @@ public abstract class ValidatorCompoiste implements ValidatorI, InitializingBean
     
     /**
      * Aside from composited validators, do its own validation here
-     * @param candidate
+     * @param candidate candidate
      */
     abstract protected void doValidate(Object candidate);
 
