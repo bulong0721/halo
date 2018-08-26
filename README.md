@@ -16,7 +16,9 @@ Halo框架是基于CQRS+扩展点+流程编排的应用框架，致力于采用�
 
 > Halo,中文名光环。美 [ˈheɪloʊ]，Halo是Hallo的简写，是德语你好的意思。
 
-## 2.Halo 模块
+## Halo框架的设计
+
+### 2.1 Halo 模块
 
 | 模块名 | 描述 | 备注 |
 | --- | --- | --- |
@@ -28,6 +30,9 @@ Halo框架是基于CQRS+扩展点+流程编排的应用框架，致力于采用�
 | halo-utils | 框架工具类用于各种DTO对象之间快速复制 |  |
 | halo-feign | feign与Halo整合 |feign与Halo整合  |
 
+### 2.2 Halo框架设计
+
+![](/halo-docs/image/convertor.png)
 
 ## 3.使用
 
