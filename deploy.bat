@@ -1,0 +1,1 @@
+call mvn clean deploy -DskipTests -e -P release -pl halo-starter,halo-feign,halo-collection -am

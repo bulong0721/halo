@@ -2,7 +2,6 @@ package org.xujin.halo.dto;
 
 /**
  * Response with single record to return
- * <p/>
  * Created by xujin on 2018/6/1.
  */
 

@@ -29,9 +29,6 @@ public class ExtensionExecutor extends ComponentExecutor{
         return locateExtension(targetClz);
     }
 
-    /**
-     * @param targetClz
-     */
     @SuppressWarnings("unchecked")
     protected <Ext> Ext locateExtension(Class<Ext> targetClz) {
         String bizCode = HaloContext.getBizCode();

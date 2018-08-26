@@ -14,7 +14,7 @@ public interface EventBusI {
     /**
      * Send event to EventBus
      * 发送事件到事件Bus
-     * @param event
+     * @param event 事件
      * @return Response
      */
     public Response fire(Event event);
@@ -22,15 +22,14 @@ public interface EventBusI {
     /**
      * fire all handlers which registed the event
      *  触发已经注册的所有注册事件对应的处理器
-     * @param event
-     * @return Response
+     * @param event 事件
      */
     public void fireAll(Event event);
 
     /**
      *  异步触发对应注册事件的对应的处理器
      * Async fire all handlers
-     * @param event
+     * @param event 事件
      */
     public void asyncFire(Event event);
 }

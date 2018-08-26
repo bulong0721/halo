@@ -9,7 +9,7 @@ public interface ValidatorI {
     
     /**
      * Validate candidate, throw according exception if failed
-     * @param candidate
+     * @param candidate candidate param
      */
     public void validate(Object candidate);
 

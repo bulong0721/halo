@@ -9,7 +9,11 @@
 	</parent>
 	<artifactId>halo-common</artifactId>
 	<version>1.0.4</version>
+
 	<name>halo-common</name>
+	<url>http://xujin.org</url>
+	<description>halo help project build DDD ability</description>
+
 	<build>
 		<plugins>
 			<plugin>

@@ -14,8 +14,8 @@ public interface CommandBusI {
     /**
      * Send command to CommandBus, then the command will be executed by CommandExecutor
      * 
-     * @param Command or Query
-     * @return Response
+     * @param cmd or Query
+     * @return Responses
      */
     public Response send(Command cmd);
 }

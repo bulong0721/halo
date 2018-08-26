@@ -4,7 +4,6 @@ import org.xujin.halo.exception.Preconditions;
 
 /**
  * Pvg Context
- * <p/>
  * Created by xujin on 2018/4/9.
  */
 public class PvgContext {

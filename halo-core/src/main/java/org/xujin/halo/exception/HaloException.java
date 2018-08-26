@@ -4,7 +4,7 @@ package org.xujin.halo.exception;
  * 
  * Halo框架抽象异常
  * 
- * @author
+ * @author xujin
  */
 public abstract class HaloException extends RuntimeException{
 
