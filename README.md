@@ -10,13 +10,15 @@ Halo框架是基于CQRS+扩展点+流程编排的应用框架，致力于采用�
 如果你觉得Halo不错，让你很爽，烦请拨冗**“Star”**。
 
 
-![](/halo-docs/Halo.jpg)
+![](/halo-docs/logo/halo-logo-1.png)
 
 > Halo Framework,光环框架是基于DDD+CQRS+扩展点+业务中间件，业务系统使用之自带光环!
 
 > Halo,中文名光环。美 [ˈheɪloʊ]，Halo是Hallo的简写，是德语你好的意思。
 
-## 2.Halo 模块
+## Halo框架的设计
+
+### 2.1 Halo 模块
 
 | 模块名 | 描述 | 备注 |
 | --- | --- | --- |
@@ -27,6 +29,22 @@ Halo框架是基于CQRS+扩展点+流程编排的应用框架，致力于采用�
 | halo-test | 框架测试模块 | todo 待重构 |
 | halo-utils | 框架工具类用于各种DTO对象之间快速复制 |  |
 | halo-feign | feign与Halo整合 |feign与Halo整合  |
+
+### 2.2 Halo框架设计
+
+#### 2.2.1 Convertor设计
+
+在Halo中有三类主要的对象：
+
+* ClientObject: 也就是二方库中的数据对象，主要承担DTO的职责。
+* Entity/ValueObject: 也就是既有属性又有行为的领域实体。
+* DataObeject：是用来获取数据用的，主要是DAO使用。
+
+![](/halo-docs/image/convertor.png)
+
+Convertor在上面三个对象之间的转换起到了至关重要的作用，然而Convertor里面的逻辑应该是简单的，大部分都是setter/getter, 如果属性重复度很高的话，也可以使用BeanUtils.copyProperties让代码变得更简洁。
+
+但事实情况是，现在系统中很多的Convertor逻辑并没有在Convertor里面。
 
 
 ## 3.使用
