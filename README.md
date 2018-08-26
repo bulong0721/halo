@@ -10,7 +10,7 @@ Halo框架是基于CQRS+扩展点+流程编排的应用框架，致力于采用�
 如果你觉得Halo不错，让你很爽，烦请拨冗**“Star”**。
 
 
-![](/halo-docs/logo/logo-light.svg)
+![](/halo-docs/logo/halo-logo-1.png)
 
 > Halo Framework,光环框架是基于DDD+CQRS+扩展点+业务中间件，业务系统使用之自带光环!
 
