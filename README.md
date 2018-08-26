@@ -36,19 +36,16 @@ Halo框架是基于CQRS+扩展点+流程编排的应用框架，致力于采用�
 
 在Halo中有三类主要的对象：
 
-ClientObject: 也就是二方库中的数据对象，主要承担DTO的职责。
-Entity/ValueObject: 也就是既有属性又有行为的领域实体。
-DataObeject：是用来获取数据用的，主要是DAO使用。
+* ClientObject: 也就是二方库中的数据对象，主要承担DTO的职责。
+* Entity/ValueObject: 也就是既有属性又有行为的领域实体。
+* DataObeject：是用来获取数据用的，主要是DAO使用。
 
 ![](/halo-docs/image/convertor.png)
 
-而Convertor在上面三个对象之间的转换起到了至关重要的作用，然而Convertor里面的逻辑应该是简单的，大部分都是setter/getter, 如果属性重复度很高的话，也可以使用BeanUtils.copyProperties让代码变得更简洁。
+Convertor在上面三个对象之间的转换起到了至关重要的作用，然而Convertor里面的逻辑应该是简单的，大部分都是setter/getter, 如果属性重复度很高的话，也可以使用BeanUtils.copyProperties让代码变得更简洁。
 
 但事实情况是，现在系统中很多的Convertor逻辑并没有在Convertor里面。
 
-比如将询盘数据convert成LeadsE，处理类是LeadsBuildStrategy，这个命名是不合适的。
-
-所以我将这段逻辑重构到ICBULeadsConvertor也等于是在清晰的告诉看代码的人，这里是做了一个Client数据到LeadsEntity的转换，仅此而已。
 
 ## 3.使用
 
