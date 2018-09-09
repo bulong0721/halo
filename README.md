@@ -3,16 +3,14 @@
 ![Halo-logo](/halo-docs/logo/logo.png)
 ================
 
-[![Build Status](https://travis-ci.org/ctripcorp/apollo.svg?branch=master)](https://travis-ci.org/ctripcorp/apollo)
-[![GitHub release](https://img.shields.io/github/release/ctripcorp/apollo.svg)](https://github.com/ctripcorp/apollo/releases)
-[![Maven Central Repo](https://img.shields.io/maven-central/v/com.ctrip.framework.apollo/apollo.svg)](https://mvnrepository.com/artifact/com.ctrip.framework.apollo/apollo-client)
-[![Coverage Status](https://coveralls.io/repos/github/ctripcorp/apollo/badge.svg?branch=master)](https://coveralls.io/github/ctripcorp/apollo?branch=master)
-<a href="https://scan.coverity.com/projects/ctripcorp-apollo">
-  <img alt="Coverity Scan Build Status" src="https://img.shields.io/coverity/scan/8244.svg"/>
-</a>
-[![codecov.io](https://codecov.io/github/ctripcorp/apollo/coverage.svg?branch=master)](https://codecov.io/github/ctripcorp/apollo?branch=master)
+[![Build Status](https://api.travis-ci.org/softwareking/halo.svg?branch=master)](https://api.travis-ci.org/softwareking/halo)
+
+[![Maven Central Repo](https://img.shields.io/maven-central/v/org.xujin.halo/halo.svg](https://mvnrepository.com/artifact/org.xujin.halo)
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 [![codebeat badge](https://codebeat.co/badges/edb89c5e-9a43-4323-8e2f-0d3ca486dbb7)](https://codebeat.co/projects/github-com-softwareking-halo-master)
+
 
 ## 1.Halo Framework
 
