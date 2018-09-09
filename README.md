@@ -1,6 +1,6 @@
 
 
-![Halo-logo](https://halo.xujin.org/img/halo_white.svg)
+![Halo-logo](https://halo.xujin.org/img/dubbo_colorful.png)
 ================
 
 [![codebeat badge](https://codebeat.co/badges/edb89c5e-9a43-4323-8e2f-0d3ca486dbb7)](https://codebeat.co/projects/github-com-softwareking-halo-master)
