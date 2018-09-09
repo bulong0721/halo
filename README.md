@@ -3,7 +3,7 @@
 ![Halo-logo](/halo-docs/logo/logo.png)
 ================
 [![Build Status](https://api.travis-ci.org/softwareking/halo.svg?branch=master)](https://api.travis-ci.org/softwareking/halo)
-[![Maven Central Repo](https://img.shields.io/maven-central/v/org.xujin.halo/halo.svg)(https://mvnrepository.com/artifact/org.xujin.halo)
+[!Maven Central Repo](https://img.shields.io/maven-central/v/org.xujin.halo/halo.svg)(https://mvnrepository.com/artifact/org.xujin.halo)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![codebeat badge](https://codebeat.co/badges/edb89c5e-9a43-4323-8e2f-0d3ca486dbb7)](https://codebeat.co/projects/github-com-softwareking-halo-master)
 
