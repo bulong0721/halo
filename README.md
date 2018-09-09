@@ -1,8 +1,6 @@
 
 
-![Halo-logo]()
-
-<img class="logo" src="https://halo.xujin.org/img/dubbo_colorful.png" style=“width: 96px;”>
+![Halo-logo](/halo-docs/logo/halo-logo-1.png)
 
 ================
 
@@ -20,12 +18,8 @@ Halo框架是基于CQRS+扩展点+流程编排的应用框架，致力于采用�
 
 >Halo站在巨人COPA的肩膀上进行重构增强，向阿里开源精神致敬，感谢原作者开源了这么优秀的项目！
 
+>Halo Framework,光环框架是基于DDD+CQRS+扩展点+业务中间件，业务系统使用之自带光环!
 
-![](/halo-docs/logo/halo-logo-1.png)
-
-> Halo Framework,光环框架是基于DDD+CQRS+扩展点+业务中间件，业务系统使用之自带光环!
-
-> Halo,中文名光环。美 [ˈheɪloʊ]，Halo是Hallo的简写，是德语你好的意思。
 
 ## Halo框架的设计
 
