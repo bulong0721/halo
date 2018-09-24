@@ -7,17 +7,18 @@
 [![Maven Central Repo](https://img.shields.io/maven-central/v/org.xujin.halo/halo.svg)](https://mvnrepository.com/artifact/org.xujin.halo)
 [![codebeat badge](https://codebeat.co/badges/edb89c5e-9a43-4323-8e2f-0d3ca486dbb7)](https://codebeat.co/projects/github-com-softwareking-halo-master)
 
-## Halo Framework
+## What is Halo?(什么是光环)
 
-   Halo, 发音美 [ˈheɪloʊ]，和hello发音基本一致，中文名光环。Halo是Hallo的简写，是德语你好的意思。
-Halo框架名寓意是赋能于业务应用开发，业务方使用者自带光环，脚踏七彩祥云，为业务开发造福，为业务架构治理和防腐提供统一的方法论。
-Halo框架是基于CQRS+扩展点+流程编排的应用框架，致力于采用领域驱动的设计思想，规范控制程序员的随心所欲，从而解决软件的复杂性问题。
-架构原则很简单，即在高内聚，低耦合，可扩展，易理解大的指导思想下，尽可能的贯彻OO的设计思想和原则。
+  Halo Framework is based on DDD+CQRS+ Extension point + business middleware, and the business system uses its aura.
+For more information, please visit [Halo Site](http://halo.xujin.org)
 
-如果你觉得Halo不错，让你很爽，烦请拨冗**“Star”**。
+>If you think halo is very good, please excuse yourself for "Star".
 
->Halo站在巨人COPA的肩膀上进行重构增强，向阿里开源精神致敬，感谢原作者开源了这么优秀的项目！
+## Getting help, and helping out (社区互助)
 
->Halo Framework,光环框架是基于DDD+CQRS+扩展点+业务中间件，业务系统使用之自带光环!
+WeChat Group: Please add group owner `Software_King` (备注"halo") to join us!
 
->更多内容访问:https://halo.xujin.org/zh-cn/
+## Special thanks (特别鸣谢)
+
+Halo is originated from Ali's [COPA](https://github.com/alibaba/copa), we enhance it according to our requirement and understandings. 
+Thank the original author for opening up such an excellent project!

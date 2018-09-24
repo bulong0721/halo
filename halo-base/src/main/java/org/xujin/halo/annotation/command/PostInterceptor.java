@@ -4,6 +4,10 @@ import org.springframework.stereotype.Component;
 
 import java.lang.annotation.*;
 
+/**
+ * Post Type Interceptor
+ * @author xujin
+ */
 @Inherited
 @Component
 @Target({ElementType.TYPE})
