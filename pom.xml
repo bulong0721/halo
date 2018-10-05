@@ -178,6 +178,13 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>3.7</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.12.6</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.reflections</groupId>
                 <artifactId>reflections</artifactId>
@@ -324,9 +331,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/SpringCloud/spring-cloud-dubbo</url>
-        <connection>scm:githttps://github.com/SpringCloud/spring-cloud-dubbo.git</connection>
-        <developerConnection>scm:git:https://github.com/SpringCloud/spring-cloud-dubbo.git</developerConnection>
+        <url>https://github.com/SoftwareKing/halo</url>
+        <connection>scm:githttps://github.com/SoftwareKing/halo.git</connection>
+        <developerConnection>scm:git:https://github.com/SoftwareKing/halo.git</developerConnection>
     </scm>
 
     <developers>
